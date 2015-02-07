@@ -1,0 +1,137 @@
+\documentclass[letterpaper,10pt,onecolumn]{article}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{empheq}
+\usepackage{enumitem}
+\usepackage[pdftex]{color,graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{calligra}
+\usepackage{algpseudocode} 
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+\newcommand{\scripty}[1]{\ensuremath{\mathcalligra{#1}}}
+\lstloadlanguages{[5.2]Mathematica}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\textwidth}{490pt}
+\setlength{\topmargin}{-40pt}
+\addtolength{\hoffset}{-0.3cm}
+\addtolength{\textheight}{4cm}
+
+\begin{document}
+\begin{center}
+
+\includegraphics[width=490pt]{header.png}\\[0.5cm]
+
+\textsc{\LARGE Taller 3 - Electromagnetismo II (FISI-3434) - 2015-10}\\[0.5cm]
+
+\textsc{\Large{Profesor: Jaime Forero}} \\[0.5cm]
+
+\textsc{Febrero 7, 2015} \\[0.5cm]
+
+\end{center}
+
+Los libros de referencia de donde tom\'e estos problemas son:
+
+\begin{itemize}
+\item \textit{Relatividad Especial (problemas selectos)} de Juan Manuel Tejeiro, editado por la Universidad Nacional de Colombia.
+
+\item \textit{A guide to physics problems} de Sideney B. Cahn y Boris
+  E. Nadgorny publicado por Kluwer Academic Publishers. 
+
+\end{itemize}
+La soluci\'on a estos problemas va a ser evaluada (en el tablero) en
+clase el jueves 12 y martes 17 de febrero. 
+
+\begin{enumerate}
+
+\item Una part\'icula de masa en reposo $m_0$ tiene una energ\'ia
+  total $E$ y un momento $\vec{p}$ medido por un observador inercial
+  $\Sigma$. Un segundo sistema de referencia $\Sigma^{\prime}$ se
+  mueve con velocidad  $v$ en la direcci\'on del eje $x$ positivo
+  respecto a $\Sigma$. Elegiendo $t=t^{\prime}=0$ cuando los ejes de
+  los dos sistemas coinciden, encuentre la energ\'ia total
+  $E^{\prime}$, el momentum  $\vec{p}^{\prime}$ y la energ\'ia
+  cin\'etica $K^{\prime}$ medidos en  el sistema $\Sigma^{\prime}$
+  t\'erminos de las cantidades $E$, $\vec{p}$ y $K$ medidas por el
+  observador $\Sigma$.    
+
+\item En un experimento de colisi\'on de dos part\'iculas ($\alpha$ y
+  $\alpha$)emergen las dos part\'iculas iniciales m\'as una nueva
+  part\'icula $\delta$. 
+\begin{displaymath}
+\alpha + \alpha \rightarrow \alpha + \alpha + \delta.
+\end{displaymath}
+Para que la creaci\'on de la part\'icula $\delta$ sea posible es
+necesario que exista una cantidad de energ\'ia disponible para dar
+cuenta, al menos, de su energ\'ia en reposo. 
+
+Hay dos formas de hacer esa reacci\'on. En la primera una 
+part\'icula $\alpha$ tiene una energ\'ia propia $E_{0}$ y se acelera
+hasta alcanzar una energ\'ia total $E_{1}$ para hacerla chocar contra
+la otra part\'icula $\alpha$ que se encuentra en reposo. En la segunda
+forma las dos part\'iculas se aceleran cada una hasta tener una
+energ\'ia final $E_2$ y se hacen colisionar frontalmente. En ambos casos se
+puede hacer que la energ\'ia total del sistema sea igual
+$E=E_{1}=2E_{2}$, sin embargo las energ\'ias disponibles son
+diferentes. Calcule la energ\'ia disponible $E_D$ para cada
+experimento.
+
+\item Demuestre que los siguientes procesos de colisi\'on son
+  prohibidos:
+\begin{itemize}
+\item Un prot\'on en reposo emite un fot\'on y retrocede.
+\item Un fot\'on de desintegra en un par electr\'on-positr\'on.
+\item Un par electr\'on-positr\'on se aniquila dando lugar a un
+  fot\'on. 
+\end{itemize}
+
+\item 
+Un \'atomo en su estado de energ\'ia m\'as baja tiene una masa
+$m$. Inicialmente en reposo es excitado a un estado con energ\'ia
+$\Delta E$. Luego de esto hace una transici\'on a su estado base
+emitiendo un fot\'on de esta misma energ\'ia $\Delta E$. Encuentre la
+frecuencia del fot\'on tomando en cuenta el retroceso relativista del
+\'atomo por conservaci\'on del 4-momento. Exprese su respuesta en
+t\'erminos de la masa $M$ del \'atomo excitado.
+
+\item Un electr\'on $e^{-}$ y un positr\'on $e^+$, cada uno de masa en
+  reposo $m_e$ se encuentran unidos con una energ\'ia de ligadura
+  $E_b$ formando positronio. Estando en esta configuraci\'on se
+  aniquilan formando dos fotones. Calcule la energ\'ia, momentum y
+  frecuencia de los fotones. 
+
+\item Ahora el positronio del caso anterior se mueve a una velocidad
+  $\vec{v}$ alej\'andose de un observador en un sistema $\Sigma$ antes
+  de aniquilarse. Encuentre la frecuencia $\omega$ de los dos fotones
+  medida en el sistema $\Sigma$ en t\'erminos de la frecuencia
+  $\omega_0$ medida en el sistema en  reposo del positronio. 
+
+\item Una diferencia entre mec\'anica cl\'asica y relatividad  es la
+  existencia de un efecto Doppler transversal en relatividad cuando la
+  luz se propaga de manera perpendicular a la fuente en el marco de
+  referencia del observador. Calcule para este caso la frecuencia del fot\'on
+  $\omega^\prime$  en t\'ermino de la frecuencia $\omega$ en su
+  sistema de reposo. 
+
+
+\item Un fot\'on de energ\'ia $Q_i$ choca contra un \'atomo de
+  hidr\'ogeno en reposo que se enceuntra en su primer estado
+  excitado. Despu\'es de la colisi\'on el \'atomo pasa a su estado
+  base y el fot\'on se dispersa con la misma ener\'ia retrocediento
+  (i.e. se refleja contra el \'atomo).
+  \begin{itemize}
+    \item ¿Este tipo de colisi\'on es el\'astica o inel\'astica?
+    \item ¿Cu\'al es la velocidad del \'atomo despu\'es de la colisi\'on?
+    \item ¿Cu\'al es la energ\'ia $Q_i$ del fot\'on incidente?
+\end{itemize}
+
+
+\end{enumerate}
+
+
+\end{document}
