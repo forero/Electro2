@@ -3,7 +3,7 @@ import numpy as np
 
 
 #count students and tasks
-csvfile = open("tablero.csv", "r")
+csvfile = open("taller_tablero.csv", "r")
 content = csv.reader(csvfile)
 n_students = 0
 
@@ -15,7 +15,7 @@ csvfile.close()
 
 
 #load arrays and lists
-csvfile = open("tablero.csv", "r")
+csvfile = open("taller_tablero.csv", "r")
 content = csv.reader(csvfile)
 random = np.random.random(n_students)
 
