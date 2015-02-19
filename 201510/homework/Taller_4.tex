@@ -1,0 +1,143 @@
+\documentclass[letterpaper,10pt,onecolumn]{article}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{empheq}
+\usepackage{enumitem}
+\usepackage[pdftex]{color,graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{calligra}
+\usepackage{algpseudocode} 
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+\newcommand{\scripty}[1]{\ensuremath{\mathcalligra{#1}}}
+\lstloadlanguages{[5.2]Mathematica}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\textwidth}{490pt}
+\setlength{\topmargin}{-40pt}
+\addtolength{\hoffset}{-0.3cm}
+\addtolength{\textheight}{4cm}
+
+\begin{document}
+\begin{center}
+
+\includegraphics[width=490pt]{header.png}\\[0.5cm]
+
+\textsc{\LARGE Taller 4 - Electromagnetismo II (FISI-3434) - 2015-10}\\[0.5cm]
+
+\textsc{\Large{Profesor: Jaime Forero}} \\[0.5cm]
+
+\textsc{Febrero 19, 2015} \\[0.5cm]
+
+\end{center}
+
+%Los problemas salieron del siguiente libro:
+%\begin{itemize}
+%\item \textit{Modern Electrodynamics} de Andrew Zangwill, editado por
+%  Cambridge University Press. 
+%\end{itemize}
+
+La soluci\'on a estos problemas va a ser evaluada (en el tablero) en
+clase el martes 3 de marzo.
+
+\begin{enumerate}
+\item Una antigua teor\'ia competidora del Big Bang postulaba la
+  \emph{creaci\'on continua} de materia cargada a una (muy peque\~na) taza
+  constante $R$ en  todos los puntos del espacio. En esta teor\'ia la
+  ecuaci\'on de continuidad se deber\'ia reemplazar por
+
+\begin{displaymath}
+\nabla\cdot{\bf j} + \frac{\partial\rho}{\partial t} = R.
+\end{displaymath}
+
+Para que esto sea cierto es necesario modificar tambi\'en los
+t\'erminos fuente en las ecuaciones de Maxwell. Muestre que es
+suficiente moficar la ley de Gauss a
+
+\begin{displaymath}
+\nabla\cdot{\bf E} = \frac{\rho}{\varepsilon_0} - \lambda\varphi
+\end{displaymath}
+
+y la ley de Amp\`ere-Maxwell a
+
+\begin{displaymath}
+\nabla\times{\bf B} = \mu_0 {\bf j} + \frac{1}{c^2}\frac{\partial {\bf
+E}}{\partial t} - \lambda{\bf A}.
+\end{displaymath}
+Donde $\lambda$ es una constante y $\varphi$ y ${\bf A}$ son los
+vectores escalares y potenciales.
+
+
+\item Una barra resistiva con masa $m$ se mueve sin fricci\'on sobre
+  dos rieles conductores. Un campo magn\'etico ${\bf B}$ apunta
+  saliendo de la p\'agina como muestra la figura. Sea $R$ la
+  resistencia de la barra de longitud $l$. Pruebe que la energ\'ia
+  cin\'etica inicial de la barra se disipa completamente como calor en
+  el circuito cuando $t\rightarrow \infty$.
+\begin{center}
+\includegraphics[width=200pt]{barra.png}
+\end{center}
+
+\item Una carga puntual $q$ est\'a fija en las coordenadas  $(a,0,0)$, otra
+  carga puntual $-q$ est\'a fija en $(-a,0,0)$. Adicionalmente un
+  campo magn\'etico uniforme ${\bf B}=B{\bf \hat{z}}$ llena todo el
+  espacio.
+\begin{itemize}
+\item  Pruebe que las lineas de flujo del vector de Poynting ya sea se cierran
+  sobre s\'i  mismas o empiezan y terminan en el infinito. 
+\item Dibuje varias l\'ineas representativas de flujo del vector de
+  Poynting,  incluyendo alguna que pase por el origen de las coordenadas.
+\end{itemize}
+
+
+\item Una part\'icula con carga $q$ y masa $m$ se mueve en campos
+  externos est\'aticos ${\bf E_0(r)}$ y ${\bf B_0(r)}$. Si
+  $\varphi_0({\bf r_q})$ es el potencial electrost\'atico en la
+  posici\'on de la part\'icula, y las perdidas por radiaci\'on son
+  despreciables, la expresi\'on usual para la conservaci\'on de
+  energ\'ia de este sistema es 
+\begin{displaymath}
+\frac{1}{2}mv^2 + q\varphi_0({\bf r_q})=constante.
+\end{displaymath}
+
+Muestre que esta ecuaci\'on es consistente con el balance de potencia
+del teorema de Poynting solamente si se a\~nada la potencia entregada
+por una fuente externa de energ\'ia que mantiene los campos contra el
+trabajo hecho en sus fuentes por los campos producidos por la
+part\'icula. 
+
+\item
+Considere un capacitor de placas paralelas con cargas $\pm Q$, \'area
+$A$ y separaci\'on $d$ en presencia de un campo magn\'etico ${\bf
+  B_0}$. Encuentre el momento lineal almacenado en los campos para
+este sistema. 
+
+\item Encuentre el momento angular almacenado en los campos
+  para una esfera ferromagn\'etica de metal que tiene
+  radio $R$, carga $Q$ y una magnetizaci\'on uniforme ${\bf M}=M{\bf
+    \hat{z}}$. 
+  \begin{itemize}
+    
+  \item Compare este valor con el valor del momento angular mec\'anico
+    que es adquirido cuando la magnetizaci\'on se quita (por ejemplo
+    calentando la esfera sobre la temperatura de Curie haciendo que el
+    ferromagnetismo desaparezca). En este caso el cambio del campo
+    magn\'etico va a inducir un campo el\'ectrico. Esta ser\'ia una
+    versi\'on m\'as f\'isica de la paradoja de Feynman discutida en
+    clase. 
+    
+  \item Compare el valor anterior con el momento angular adquirido
+    cuando la esfera se descarga (por ejemplo conectando la esfera a
+    tierra). En este caso el cambio del campo el\'ectrico va a inducir
+    un campo magn\'etico. 
+  \end{itemize}
+  
+\end{enumerate}
+
+
+
+\end{document}
