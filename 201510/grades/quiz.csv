@@ -1,14 +1,14 @@
-Nombre,Q1,Q2
-SergioCotrino, 2.5, -1.25
-OscarGarzon, 1.25, -2.5
-SergioHernandez, -0.63, 0.0
-DavidJaramillo, 1.25, 3.13 
-JoseDarioJimenez, 1.25, 1.25
-SergioLobo, 3.75, 0.0
-JorgeMadrid, 0.63, -2.5
-ValentinaQuiroga, 0.0, -1.87
-MariaCamilaGutierrez, 1.88, 0.0
-MateoRestrepo, 3.75, 1.25
-NicolasRomero, 2.50, -0.61
-SebastianRosales, -1.87, 1.25
-JesusSolano, 1.88, 0.0
+Nombre,Q1,Q2,Q3
+SergioCotrino, 2.5, -1.25, 3.75
+OscarGarzon, 1.25, -2.5, 2.50
+SergioHernandez, -0.63, 0.0, 1.25
+DavidJaramillo, 1.25, 3.13, 5.0
+JoseDarioJimenez, 1.25, 1.25, 1.25
+SergioLobo, 3.75, 0.0, 2.50
+JorgeMadrid, 0.63, -2.5, 2.50
+ValentinaQuiroga, 0.0, -1.87, 0.0
+MariaCamilaGutierrez, 1.88, 0.0, 0.0
+MateoRestrepo, 3.75, 1.25, 2.50
+NicolasRomero, 2.50, -0.61, 0.0
+SebastianRosales, -1.87, 1.25, 1.25
+JesusSolano, 1.88, 0.0, 2.50
