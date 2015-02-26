@@ -1,0 +1,128 @@
+\documentclass[letterpaper,10pt,onecolumn]{article}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{empheq}
+\usepackage{enumitem}
+\usepackage[pdftex]{color,graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{calligra}
+\usepackage{algpseudocode} 
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+\newcommand{\scripty}[1]{\ensuremath{\mathcalligra{#1}}}
+\lstloadlanguages{[5.2]Mathematica}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\textwidth}{490pt}
+\setlength{\topmargin}{-40pt}
+\addtolength{\hoffset}{-0.3cm}
+\addtolength{\textheight}{4cm}
+
+\begin{document}
+\begin{center}
+
+\includegraphics[width=490pt]{header.png}\\[0.5cm]
+
+\textsc{\LARGE Quiz 3 - Electromagnetismo II (FISI-3434) - 2015-10}\\[0.5cm]
+
+\textsc{\Large{Profesor: Jaime Forero}} \\[0.5cm]
+
+\textsc{\Large{Febrero 26, 2015}} \\[0.5cm]
+
+
+
+\end{center}
+
+Tienen 20 minutos para responder las siguientes 4 preguntas. Solamente
+una opci\'on es v\'alida. No es necesario escribir una
+justificaci\'on. Los puntos con respuesta correcta valen $+1.25$.
+
+
+Las primeras dos preguntas hacen referencia 
+
+
+
+
+\begin{enumerate}
+
+\item  
+Considere la superposici\'on de
+dos ondas planas electromagn\'eticas ortogonales que se pueden
+escribir como la parte real de  ${\bf E}={\bf \hat{x}} E_1
+  \exp[i(kz-\omega t)] + {\bf \hat{y}}E_2\exp{[i(kz-\omega t+\pi)]}$ donde
+$k$, $\omega$, $E_1$ y $E_2$ son reales.
+
+Si $E_2=E_1$, la punta del vector del campo el\'ectrico va a
+  describir una trayectoria que vista a lo largo del eje $z$ desde el
+  lugar positivo de $z$ hacia el origen se ve como:
+\begin{itemize}
+\item[a)] Una l\'inea a $45^{\circ}$ del eje $x$ positivo.
+\item[b)] Una l\'inea a $135^{\circ}$ del eje $x$ positivo.
+\item[c)] Un c\'irculo en direcci\'on horaria.
+\item[d)] Un c\'irculo en direcci\'on antihoraria. 
+\item[e)] Un camino aleatorio.
+
+\end{itemize}
+
+\item
+Las ecuaciones de Maxwell se pueden escribir en la forma que aparece
+m\'as abajo. Si existiera la carga magn\'etica y se conservara
+¿Cu\'ales ecuaciones deber\'ian cambiarse ?
+
+\begin{equation}
+\nabla\cdot{\bf E} = \rho/\epsilon_0
+\end{equation}
+\begin{equation}
+\nabla\cdot{\bf B} = 0
+\end{equation}
+\begin{equation}
+\nabla\times{\bf E} = -\frac{\partial {\bf B}}{\partial t}
+\end{equation}
+\begin{equation}
+\nabla\times{\bf B} = \mu_0{\bf j} + \mu_0 \epsilon_0 \frac{\partial
+  {\bf E}}{\partial t}
+\end{equation}
+
+\begin{itemize}
+\item[a)] La 1 solamente.
+\item[b)] La 2 Solamente.
+\item[c)] La 3 solamente.
+\item[d)] La 1 y la 4.
+\item[e)] La 2 y la 3.
+\end{itemize}
+
+\newpage
+
+\item Una corriente $I$ circula por un cable conductor de forma
+  cil\'indrica de longitud $L$, radio $R$, longitud
+  $L$ que tiene sus extremos a una diferencia de potencial $V$.
+  ¿C\'uanto vale la magnitud del vector de Poynting en la superficie
+  del cable?
+
+\begin{itemize}
+\item[a)] $VI$ 
+\item[b)] $\frac{VI}{\pi R^2}$
+\item[c)] $\frac{VI}{2 \pi R}$
+\item[d)] $\frac{VI}{2 \pi R L}$
+\item[e)] $\frac{VI}{\pi R^2 L}$
+\end{itemize}
+
+
+
+
+\item El momento angular almacenado en los campos el\'ectricos  y magn\'eticos
+  para una esfera ferromagn\'etica de metal que tiene radio $R$, carga $Q$ y una magnetizaci\'on uniforme ${\bf M}=M{\bf \hat{z}}$ es proporcional a:
+\begin{itemize}
+\item[a)] $M Q R^2$
+\item[b)] $\epsilon_0 M Q R^2$
+\item[c)] $\mu_0 M Q R^2$
+\item[d)] $\mu_0 M Q R^2 / \epsilon_0$
+\item[e)] $\epsilon \mu_0 M Q R^2$
+\end{itemize}
+
+\end{enumerate}
+\end{document}
