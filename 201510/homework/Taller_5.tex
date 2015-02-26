@@ -1,0 +1,111 @@
+\documentclass[letterpaper,10pt,onecolumn]{article}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{empheq}
+\usepackage{enumitem}
+\usepackage[pdftex]{color,graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{calligra}
+\usepackage{algpseudocode} 
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+\newcommand{\scripty}[1]{\ensuremath{\mathcalligra{#1}}}
+\lstloadlanguages{[5.2]Mathematica}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\textwidth}{490pt}
+\setlength{\topmargin}{-40pt}
+\addtolength{\hoffset}{-0.3cm}
+\addtolength{\textheight}{4cm}
+
+\begin{document}
+\begin{center}
+
+\includegraphics[width=490pt]{header.png}\\[0.5cm]
+
+\textsc{\LARGE Taller 5 - Electromagnetismo II (FISI-3434) - 2015-10}\\[0.5cm]
+
+\textsc{\Large{Profesor: Jaime Forero}} \\[0.5cm]
+
+\textsc{Febrero 26, 2015} \\[0.5cm]
+
+\end{center}
+
+%Los problemas salieron del siguiente libro:
+%\begin{itemize}
+%\item \textit{Modern Electrodynamics} de Andrew Zangwill, editado por
+%  Cambridge University Press. 
+%\end{itemize}
+
+La soluci\'on a estos problemas va a ser evaluada (en el tablero) en
+clase el martes 3 de marzo. El c\'odigo del punto 4 va a contar como
+un quiz que se debe entregar por SICUA antes del 7 de marzo a las 7AM.
+
+\begin{enumerate}
+\item
+
+Encuentre y describa el campo electromagn\'etico producido por la
+superposici\'on de dos ondas planas de igual amplitud,
+monocrom\'aticas, que se propagan en direcciones opuestas. 
+\begin{itemize}
+\item
+  Haga el
+  ejercicio cuando la onda que se propaga en $+z$ tiene polarizaci\'on
+  circular izquierda (i.e. la punta del vector ${\bf E}$ gira contrario
+  a las manecillas del reloj) y cuando la onda que se propaga en $-z$
+  tiene polarizacion circular derecha. 
+
+\item Repita el ejercicio cuando ambas ondas tienen polarizaci\'on
+  circular izquierda.
+\end{itemize}
+
+
+\item El campo el\'ectrico de una onda que se propaga en el vac\'io es
+  ${\bf E}={\bf\hat{y}}E_0\exp[i(hz-\omega t)-\kappa x]$. 
+
+\begin{itemize}
+\item C\'omo est\'an relacionados entre s\'i los par\'ametros reales
+  $h$, $\kappa$ y $\omega$?
+\item Encuentre el campo magn\'etico asociado.
+\item Calcule el vector de Poynting promediado en el tiempo.
+\end{itemize}
+
+\item 
+Usando la siguiente forma de escribir el campo el\'ectrico de un
+paquete de onda
+
+\begin{displaymath}
+{\bf E}({\bf r}, t)=\frac{1}{(2\pi)^{3/2}}\int d^3k {\bf
+  E}_{\perp}\exp[i({\bf k}\cdot{\bf r} -ckt)]
+\end{displaymath}
+\begin{itemize}
+\item
+Muestre que el momento lineal total del paquete de onda satisface:
+\begin{displaymath}
+c{\bf P}_{EM}=\frac{1}{2}\epsilon_0\int {\bf \hat{k}}|{\bf
+  E}_{\perp}|^2.
+\end{displaymath}
+\item
+Justifique la siguiente desigualdad: $U_{EM}\geq c|{\bf P}_{EM}|$
+\item
+¿Cu\'ando aplica la igualdad en el caso anterior? (Ese fue el caso que
+  tratamos en clase).
+\end{itemize}
+
+\item Considere un \'atomo de Hidr\'ogeno ionizado en la parte alta de
+  la atm\'osfera terrestre. Considerando que esa parte de la
+  atm\'osfera la intensidad de la luz solar es aproximadamente $1300$
+  W/m$^2$ y que la luz que llega est\'a
+  linealmente polarizada escriba un programa (en C, Python o Java) que
+  describa la trayectoria de este \'atomo de Hidr\'ogeno ionizado
+  cuando interact\'ua con la luz solar. Haga expl\'icitas todas las
+  aproximaciones que utilice para resolver el problema.
+\end{enumerate}
+
+
+
+\end{document}
