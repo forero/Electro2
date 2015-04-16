@@ -1,0 +1,92 @@
+\documentclass[letterpaper,10pt,onecolumn]{article}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{empheq}
+\usepackage{enumitem}
+\usepackage[pdftex]{color,graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{calligra}
+\usepackage{algpseudocode} 
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+\newcommand{\scripty}[1]{\ensuremath{\mathcalligra{#1}}}
+\lstloadlanguages{[5.2]Mathematica}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\textwidth}{490pt}
+\setlength{\topmargin}{-40pt}
+\addtolength{\hoffset}{-0.3cm}
+\addtolength{\textheight}{4cm}
+
+\begin{document}
+\begin{center}
+
+\includegraphics[width=490pt]{header.png}\\[0.5cm]
+
+\textsc{\LARGE Taller 10 - Electromagnetismo II (FISI-3434) - 2015-10}\\[0.5cm]
+
+\textsc{\Large{Profesor: Jaime Forero}} \\[0.5cm]
+
+\textsc{Abril 916 2015} \\[0.5cm]
+
+\end{center}
+
+La soluci\'on a estos problemas va a ser evaluada (en el tablero) en
+clase el jueves 23 de abril.
+
+\begin{enumerate}
+\item (Quiz \#7) Escriba un programa que haga gr\'aficas de los lugares
+  donde el campo el\'ectrico tiene valores constantes para dos cargas 
+  el\'ectricas $\pm q/4\pi\epsilon_0=1N m^2$ ubicadas en forma de
+  dipolo separadas una distancia $3\times 10^{-2}$m y que oscilan con
+  una frecuencia angular de $\omega = 2\pi$ rad/s (usando la
+  convenci\'on de Griffiths para las cargas en funci\'on del
+  tiempo). Estas gr\'aficas se deben hacer 
+  para los siguientes tiempos $t=0, 1/4\times 2\pi\omega^{-1},
+  1/2\times 2\pi\omega^{-1}$.  Fecha l\'imite de entrega por SICUA:
+  Jueves 23 de abril a las 9AM. 
+
+\item Encuentre la ecuaci\'on de movimiento para el campo escalar
+  $\phi$ que tiene las siguientes densidades lagrangianas
+\begin{itemize}
+\item ${\mathcal L} = \frac{1}{2}\phi\phi - \frac{1}{2}|\nabla\phi|^2$
+\item ${\mathcal L} = \frac{1}{2}(\partial_\mu\phi)(\partial_\mu\phi) -
+  \frac{1}{2}\sigma\phi^2 $
+\end{itemize}
+
+
+\item Encuentre las ecuaciones de movimiento correspondientes a la
+  siguiente densidad Lagrangiana.
+\begin{equation}
+{\mathcal L} = -\frac{1}{8\pi}\partial_\alpha A_\beta
+\partial^{\alpha}A^{\beta} -\frac{1}{c}J_{\alpha}A^{\alpha}.
+\end{equation}
+C\'omo se relacionan esas ecuaciones de movimiento con las ecuaciones
+de Maxwell?
+
+\item Encuentre las ecuaciones de movimiento correspondientes a la
+  siguiente densidad Lagrangiana.
+\begin{equation}
+{\mathcal L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} -
+\frac{a^2}{2}\partial_\mu F^{\alpha\mu}\partial^{\beta}F_{\alpha\beta}
+\end{equation}
+C\'omo se relacionan esas ecuaciones de movimiento con las ecuaciones
+de Maxwell?
+
+\item Muestre expl\'icitamente que el Lagrangiano $L({\rm r, {\rm
+    v}})=-mc^2/\gamma - q\Phi + q{\bf v}\cdot{\bf A}$ predice la
+  ecuaci\'on relativista correcta para el movimiento de una
+  part\'icula con carga $q$ y masa $m$.
+
+\item Muestre expl\'icitamente que el tensor electromagn\'etico
+  $F^{\mu\nu}$ es efectivamente un tensor dos veces contravariante.
+
+\end{enumerate}
+
+
+
+\end{document}
