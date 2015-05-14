@@ -1,0 +1,117 @@
+\documentclass[letterpaper,10pt,onecolumn]{article}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{empheq}
+\usepackage{enumitem}
+\usepackage[pdftex]{color,graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{calligra}
+\usepackage{algpseudocode} 
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+\newcommand{\scripty}[1]{\ensuremath{\mathcalligra{#1}}}
+\lstloadlanguages{[5.2]Mathematica}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\textwidth}{490pt}
+\setlength{\textheight}{610pt}
+\setlength{\topmargin}{-85pt}
+\addtolength{\hoffset}{-0.3cm}
+\addtolength{\textheight}{4cm}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+
+\includegraphics[width=490pt]{figs/header.png}\\[0.5cm]
+
+\textsc{\LARGE Final - Electromagnetismo II (FISI-3434) - 2015-10}\\[0.5cm]
+
+\textsc{\Large{Profesor: Jaime Forero --- Fecha: Mayo 14, 2015}} \\[0.5cm]
+\end{center}
+
+\begin{enumerate}
+
+\item (20 puntos)
+ Demuestre que es imposible tener un proceso donde un  prot\'on en
+ reposo emite un fot\'on y retrocede.
+
+\item (20 puntos) El campo el\'ectrico de una onda electromag\'etica
+  en el vac\'io est\'a descrito por ${\bf E}={\bf \hat{x}} E_1 \cos(\omega t)
+  \cos(kz) + {\bf \hat{y}} E_2 \sin(\omega t)
+  \sin(kz)$. Calcule el vector de Poynting promediado en el
+  tiempo.
+
+
+
+\item (20 puntos) 
+Luz monocrom\'atica de frecuencia $\omega$ emitida dentro de un acuario pasa por
+el agua ($n=n_1$) atraviesa un vidrio plano ($n=n_2$)  de grosor $d$ y
+sale al aire ($n=n_3$).  Asumiendo que la luz llega de manera normal al
+vidrio encuentre bajo que condici\'ones el coeficiente de
+transmisi\'on es m\'aximo (no es necesario calcular el coeficiente). 
+
+\item
+Considere la media antena que se muestra en la Figura. 
+\begin{center}
+\includegraphics[width=300pt]{figs/antena.png}
+\end{center}
+La corriente se
+distribuye por la l\'inea punteada y tienen la siguiente dependencia
+temporal y espacial
+\begin{displaymath}
+I=I_0 \cos(2\pi z/\lambda)\cos(\omega t).
+\end{displaymath} 
+\begin{itemize}
+\item (10 puntos) Encuentre el vector potencial en la zona de radiaci\'on.
+\item (10 puntos) Muestre que el promedio temporal de la potencia emitida por
+  unidad de \'angulo s\'olido es 
+\begin{displaymath}
+\frac{dP}{d\Omega} \propto
+I_0^2\frac{\cos^{2}((\pi/2)\cos\theta)}{\sin^2{\theta}} 
+\end{displaymath}
+\end{itemize}
+
+Recuerde que:
+\begin{displaymath}
+\frac{dP}{d\Omega} \propto
+\mathrm{Re}[r^2 {\bf n}\cdot ({\bf E}\times {\bf B}^{*})]
+\end{displaymath}
+
+
+
+\item Una part\'icula ultrarelativista de masa $m$ y carga $q$ se
+  mueve en un plano perpendicular a un campo magn\'etico de magnitud
+  $B$ emitiendo radiaci\'on sincrotr\'on.   
+
+\begin{itemize}
+\item (15 puntos) Muestre que la energ\'ia de la part\'icula decrece
+  en el tiempo de acuerdo a  
+\begin{displaymath}
+\gamma = \gamma_0(1+A\gamma_0 t)^{-1}, 
+\end{displaymath}
+donde $\gamma_0$ es el valor inicial de $\gamma$ y $A$ es una
+constante que  debe encontrar.
+\item (5 puntos) En clase hab\'iamos visto que el factor $\gamma$ es
+constante para el movimiento de una part\'icula dentro de un campo
+magn\'etico. Explique c\'omo se reconcilia este hecho con el resultado
+que acaba de encontrar donde $\gamma$ cambia. 
+\end{itemize}
+
+\item (20 puntos) Un positr\'on no relativista de carga $e$ y velocidad
+  $v_1$ llega en una colisi\'on frontal sobre un n\'ucleo fijo de
+  carga $Ze$. El positr\'on, que viene desde el infinito, se
+  desacelera hasta que llega al reposo y luego se vuelve a acelerar
+  hasta que llega a una velocidad terminal $v_2$ en el
+  infinito. Tomando en cuenta las p\'erdidas por radiaci\'on (pero
+  asumiendo que son peque\~nas), encuentre $v_2$ como una funci\'on de
+  $v_1$ y Z.
+
+
+
+\end{enumerate}
+\end{document}
