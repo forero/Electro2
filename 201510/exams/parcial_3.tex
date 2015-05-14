@@ -1,0 +1,85 @@
+\documentclass[letterpaper,10pt,onecolumn]{article}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{empheq}
+\usepackage{enumitem}
+\usepackage[pdftex]{color,graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{calligra}
+\usepackage{algpseudocode} 
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+\newcommand{\scripty}[1]{\ensuremath{\mathcalligra{#1}}}
+\lstloadlanguages{[5.2]Mathematica}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\textwidth}{490pt}
+\setlength{\textheight}{610pt}
+\setlength{\topmargin}{-85pt}
+\addtolength{\hoffset}{-0.3cm}
+\addtolength{\textheight}{4cm}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+
+\includegraphics[width=490pt]{figs/header.png}\\[0.5cm]
+
+\textsc{\LARGE Parcial 3 - Electromagnetismo II (FISI-3434) - 2015-10}\\[0.5cm]
+
+\textsc{\Large{Profesor: Jaime Forero --- Fecha: Mayo 2, 2015}} \\[0.5cm]
+\end{center}
+
+\begin{enumerate}
+
+\item (20 puntos) Una part\'icula de carga $q$ se mueve a velocidad
+  constante sobre el eje $x$. Calcule los campos magn\'etico y
+  el\'ectrico cuando la part\'icula se encuentra en el origen del
+  sistema de coordenadas.
+  
+\item (20 puntos) 
+  Para la misma part\'icula del punto anterior
+  calcule la potencia total que pasa por
+  el plano ubicado en $x=a$ en el mismo momento cuando la part\'icula se
+  encuentra en el origen del sistema de coordenadas.
+
+\item (20 puntos) Cuando una onda electromagn\'etica incide
+  perpendicularmente sobre un plano conductor en reposo el coeficiente
+  de reflexi\'on (el cociente entre la energ\'ia reflejada sobre la
+  energ\'ia incidente) es igual a $1$. Utilizando las transformaciones
+  de Lorentz para el campo electromagn\'etico, calcule el coeficiente de
+  reflexi\'on si el espejo se mueve a una velocidad $v$ en la
+  direcci\'on de propagaci\'on de la onda incidente. 
+
+\item (20 puntos) Dos part\'iculas id\'enticas de carga $q$, masa $m$,
+  energ\'ia $E_0$ se acercan desde el infinito en una colisi\'on
+  frontal a velocidades relativistas. Estime la distancia m\'inima a
+  la que se acercan las dos cargas. Haga claras todas sus aproximaciones.
+
+\item
+Una densidad del Lagrangiano alternativo para el campo electromagn\'etico es
+\begin{displaymath}
+{\mathcal L}=-\frac{1}{8\pi}\partial_\alpha A_\beta\partial^\alpha A^{\beta} -\frac{1}{c}J_\alpha A^\alpha
+\end{displaymath}
+\begin{itemize}
+\item (10 puntos) Derive las ecuaciones de movimiento Euler-Lagrange.
+\item (10 puntos) Explique bajo cu\'ales suposiciones son las ecuaciones de
+  movimiento halladas iguales a las ecuaciones de Maxwell.
+\end{itemize}
+
+\item (20 puntos) Demuestre expl\'icitamente que la transformaci\'on
+  gauge $A^{\alpha}\rightarrow A^{\alpha}+\partial^\alpha \Lambda$ de
+  los potenciales en el Lagrangiano de una part\'icula cargada en un
+  campo electromag\'netico generan
+  otro Lagrangiano equivalente. La part\'icula tiene carga $q$ y
+  velocidad $\vec{v}$. Use el hecho que los Lagrangianos que solamente
+  difieren en una derivada total del tiempo de alguna funci\'on de las
+  coordenadas y del tiempo, son equivalentes. La funci\'on $\Lambda =
+  \Lambda (x^\alpha)$.
+
+\end{enumerate}
+\end{document}
